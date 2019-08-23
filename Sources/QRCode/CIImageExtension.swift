@@ -10,6 +10,8 @@ import Foundation
 
 internal typealias Scale = (dx: CGFloat, dy: CGFloat)
 
+#if canImport(UIKit)
+
 internal extension CIImage {
     
     /// Creates an `UIImage` with interpolation disabled and scaled given a scale property
@@ -33,3 +35,5 @@ internal extension CIImage {
         return result
     }
 }
+
+#endif

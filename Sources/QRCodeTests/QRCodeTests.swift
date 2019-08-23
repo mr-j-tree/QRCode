@@ -6,7 +6,12 @@
 //  Copyright (c) 2015 Alexander Schuch. All rights reserved.
 //
 
+#if canImport(AppKit)
+import AppKit
+#else
 import UIKit
+#endif
+
 import XCTest
 @testable import QRCode
 
