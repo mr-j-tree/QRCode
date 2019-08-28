@@ -8,9 +8,13 @@
 
 import Foundation
 
-internal typealias Scale = (dx: CGFloat, dy: CGFloat)
+#if canImport(AppKit)
+import AppKit
+#else
+import UIKit
+#endif
 
-#if canImport(UIKit)
+internal typealias Scale = (dx: CGFloat, dy: CGFloat)
 
 internal extension CIImage {
     
@@ -35,5 +39,3 @@ internal extension CIImage {
         return result
     }
 }
-
-#endif
