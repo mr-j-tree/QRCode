@@ -8,11 +8,8 @@
 
 import Foundation
 
-#if canImport(AppKit)
-import AppKit
-#else
+#if os(iOS)
 import UIKit
-#endif
 
 internal typealias Scale = (dx: CGFloat, dy: CGFloat)
 
@@ -39,3 +36,5 @@ internal extension CIImage {
         return result
     }
 }
+
+#endif
