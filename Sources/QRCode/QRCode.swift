@@ -73,7 +73,7 @@ public struct QRCode {
     
     // MARK: Generate QRCode
     
-    #if canImport(AppKit)
+    #if os(macOS)
     
     /// The QRCode's NSImage representation
     public var image: NSImage? {
