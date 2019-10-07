@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Alexander Schuch. All rights reserved.
 //
 
-#if canImport(AppKit)
+#if os(macOS)
 import AppKit
 #else
 import UIKit
@@ -73,7 +73,7 @@ public struct QRCode {
     
     // MARK: Generate QRCode
     
-    #if canImport(AppKit)
+    #if os(macOS)
     
     /// The QRCode's NSImage representation
     public var image: NSImage? {
