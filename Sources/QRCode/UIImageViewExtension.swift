@@ -6,13 +6,9 @@
 //  Copyright (c) 2015 Alexander Schuch. All rights reserved.
 //
 
-#if canImport(AppKit)
-import AppKit
-#else
-import UIKit
-#endif
+#if os(iOS) || os(tvOS)
 
-#if canImport(UIKit)
+import UIKit
 
 public extension UIImageView {
     
